@@ -1,0 +1,11 @@
+завдання files 
+file_path = 'example.txt' # Замініть на ваш шлях до файлу
+
+try:
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    print(f"Помилка: Файл за шляхом '{file_path}' не знайдено.")
+except Exception as e:
+    print(f"Сталася помилка: {e}")
