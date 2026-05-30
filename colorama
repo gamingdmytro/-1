@@ -1,0 +1,15 @@
+завдання colorama
+pip install colorama
+
+import colorama
+print(dir(colorama))
+
+from colorama import Fore, Back, Style, init
+
+init(autoreset=True) 
+
+print(Fore.RED + "Цей текст червоний")
+print(Back.CYAN + "Цей текст має блакитний фон")
+print(Style.BRIGHT + "Це яскравий текст")
+print("Цей текст буде звичайним завдяки autoreset=True")
+
