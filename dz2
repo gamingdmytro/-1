@@ -1,0 +1,64 @@
+Завдання 1: BankAcount
+class BankAccount:
+    def __init__(self, account_number, balance=0):
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Рахунок {self.account_number}: поповнено на {amount}. Баланс: {self.balance}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Недостатньо коштів на рахунку!")
+        else:
+            self.balance -= amount
+            print(f"Рахунок {self.account_number}: знято {amount}. Баланс: {self.balance}")
+
+Завдання 2: Car
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def get_info(self):
+        return f"{self.year} {self.make} {self.model}"
+
+Завдання 3: Employe
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def get_info(self):
+        return f"{self.year} {self.make} {self.model}"
+
+Завдання 4: Rectengle
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def calculate_area(self):
+        return self.width * self.height
+
+    def calculate_perimeter(self):
+        return 2 * (self.width + self.height)
+
+Завдання 5: Product
+class Product:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+
+    def calculate_total_price(self):
+        return self.price * self.quantity
+
+    def display_info(self):
+        print(f"Товар: {self.name}")
+        print(f"Ціна: {self.price}")
+        print(f"Кількість: {self.quantity}")
+        print(f"Загальна вартість: {self.calculate_total_price()}")
